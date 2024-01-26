@@ -1,0 +1,43 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push():
+push 1.582375 ms
+Time to run code with unshift():
+unshift 701.077833 ms
+
+Large Array
+-----------
+Time to run code with push():
+push 467.417 μs
+Time to run code with unshift():
+unshift 6.97825 ms
+
+Medium Array
+------------
+Time to run code with push():
+push 101.584 μs
+Time to run code with unshift():
+unshift 148.375 μs
+
+Small Array
+-----------
+Time to run code with push():
+push 62.583 μs
+Time to run code with unshift():
+unshift 29.834 μs
+
+Tiny Array
+----------
+Time to run code with push():
+push 48.292 μs
+Time to run code with unshift():
+unshift 22.583 μs
+
+the smaller arrays (tiny & small) seem to do better with unshift. 
+extra large and large seem to have the most significant difference and so 
+i think they scale better. i remember that unshift has to shift a bunch of numbers
+and then add the new one at the beginning so i can understand that the difference 
+between doing this with a million and 10 numbers is very different.
