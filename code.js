@@ -9,6 +9,7 @@ function addToZero(numbers) {
         }
     return false; 
 }
+//O(n^2)
 
 //use a variable to track letters
 //use.includes to see if the letter exists already
@@ -25,7 +26,7 @@ function uniqueChars(word) {
         }
         return true;
     }   
-}
+} //O(n)
 
 // function pangramSentence(sentence) {
 //     const lowerCaseSentence = sentence.toLowerCase();
@@ -39,13 +40,14 @@ function isPangram(sentence){
     //make an array with the alphabet
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
     
+    
     for (let i = 0; i < alphabet.length; i++) {
       if(chars.indexOf(alphabet[i]) < 0){
         return false;
       }
     }
     return true;
-  }
+  }//O(n)
 
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
 console.log(isPangram("I like cats, but not mice"));
@@ -61,6 +63,6 @@ function findLongerWord(words) {
         }
     }
     return wordLength;
-}
+}//O(n)
 
 console.log(findLongerWord(["hi", "hello"]));
